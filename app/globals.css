@@ -70,3 +70,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+
+  .scrollbar::-webkit-scrollbar {
+    @apply !w-1.5;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    @apply !bg-gray-100 dark:!bg-neutral-700 !rounded-full;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply !bg-gray-300 dark:!bg-neutral-500 !rounded-full;
+  }
+}
